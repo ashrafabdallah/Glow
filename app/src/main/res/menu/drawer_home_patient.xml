@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <group android:checkableBehavior="none"
+    android:id="@+id/up" >
+        <item
+            android:id="@+id/Dental_history"
+            android:icon="@drawable/dentalhistory"
+            android:title="Dental history" />
+        <item
+            android:id="@+id/Update"
+            android:icon="@drawable/update"
+            android:title="Update" />
+        <item
+             android:id="@+id/about"
+             android:icon="@drawable/about"
+             android:title="About" />
+        <item
+            android:id="@+id/Logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+        </group>
+</menu>

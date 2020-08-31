@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "36338824443",
+    "firebase_url": "https://glow-cd0a4.firebaseio.com",
+    "project_id": "glow-cd0a4",
+    "storage_bucket": "glow-cd0a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36338824443:android:ddee2a6068a36fd6a56c5e",
+        "android_client_info": {
+          "package_name": "com.example.glow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36338824443-6vng27blccbiiuuf1v29qvvscvi6bct2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuNwEEf51tG2iLd6Ley5LbMicEdfVV6ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36338824443-6vng27blccbiiuuf1v29qvvscvi6bct2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activity.Selectstudentfrompatienthome">
+
+  <ImageView
+      android:id="@+id/imageView6"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:scaleType="fitXY"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline24"
+      app:layout_constraintVertical_bias="1.0"
+      app:srcCompat="@drawable/rectangle" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+  <TextView
+      android:id="@+id/textView31"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginBottom="8dp"
+      android:fontFamily="@font/cairo"
+      android:text="Student Name"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toTopOf="@+id/guideline25"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+
+      android:id="@+id/studentName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/cairo"
+      android:text="Sadsfdgfdgfrg"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.146"
+      app:layout_constraintStart_toEndOf="@+id/textView31"
+      app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+  <TextView
+      android:id="@+id/Textprosthesis"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginLeft="8dp"
+      android:fontFamily="@font/cairo"
+      android:text="- Prosthesis  "
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toTopOf="@+id/guideline8"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/guideline25" />
+
+  <TextView
+      android:id="@+id/textamalgam"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginLeft="8dp"
+      android:fontFamily="@font/cairo"
+      android:text="- Operative(amalgam)"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toTopOf="@+id/guideline26"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+  <TextView
+      android:id="@+id/TextfixedProsthodontics"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginLeft="8dp"
+      android:fontFamily="@font/cairo"
+      android:text="- Fixed prosthodontics "
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toTopOf="@+id/guideline27"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline26"
+      app:layout_constraintVertical_bias="0.61" />
+
+  <TextView
+      android:id="@+id/textan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginLeft="8dp"
+      android:fontFamily="@font/cairo"
+      android:text="-Endodontics  "
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toTopOf="@+id/guideline28"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+  <TextView
+      android:id="@+id/textView43"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginLeft="8dp"
+      android:fontFamily="@font/cairo"
+      android:text="-Operative(composite)"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toTopOf="@+id/guideline30"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline28"
+      app:layout_constraintVertical_bias="0.45" />
+
+  <CheckBox
+      android:id="@+id/prosthesis"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      app:layout_constraintBottom_toTopOf="@+id/guideline8"
+      app:layout_constraintEnd_toStartOf="@+id/guideline10"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/Textprosthesis"
+      app:layout_constraintTop_toTopOf="@+id/guideline25" />
+
+  <CheckBox
+      android:id="@+id/amalgam"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      app:layout_constraintBottom_toTopOf="@+id/guideline26"
+      app:layout_constraintEnd_toStartOf="@+id/guideline10"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/textamalgam"
+      app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+  <CheckBox
+      android:id="@+id/fixedProsthodontics"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      app:layout_constraintBottom_toTopOf="@+id/guideline27"
+      app:layout_constraintEnd_toStartOf="@+id/guideline10"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/TextfixedProsthodontics"
+      app:layout_constraintTop_toTopOf="@+id/guideline26" />
+
+  <CheckBox
+      android:id="@+id/endodontics"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      app:layout_constraintBottom_toTopOf="@+id/guideline28"
+      app:layout_constraintEnd_toStartOf="@+id/guideline10"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/textan"
+      app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+  <CheckBox
+      android:id="@+id/composite"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      app:layout_constraintBottom_toTopOf="@+id/guideline30"
+      app:layout_constraintEnd_toStartOf="@+id/guideline10"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/textView43"
+      app:layout_constraintTop_toTopOf="@+id/guideline28" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.36" />
+
+  <TextView
+
+      android:id="@+id/prosthesisDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginRight="4dp"
+      android:fontFamily="@font/cairo"
+      android:textColor="@color/colorPrimary"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toTopOf="@+id/guideline8"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/guideline10"
+      app:layout_constraintTop_toTopOf="@+id/prosthesis" />
+
+  <TextView
+      android:id="@+id/amalgamDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginRight="4dp"
+      android:fontFamily="@font/cairo"
+      android:textColor="@color/colorPrimary"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="@+id/amalgam"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/guideline10"
+      app:layout_constraintTop_toTopOf="@+id/amalgam" />
+
+  <TextView
+
+      android:id="@+id/fixedProsthodonticsDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginRight="4dp"
+      android:fontFamily="@font/cairo"
+      android:textColor="@color/colorPrimary"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="@+id/fixedProsthodontics"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/guideline10"
+      app:layout_constraintTop_toTopOf="@+id/fixedProsthodontics" />
+
+  <TextView
+      android:id="@+id/endodonticsDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginRight="4dp"
+      android:fontFamily="@font/cairo"
+      android:textColor="@color/colorPrimary"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="@+id/endodontics"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/guideline10"
+      app:layout_constraintTop_toTopOf="@+id/endodontics" />
+
+  <TextView
+      android:id="@+id/compositeDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginRight="4dp"
+      android:fontFamily="@font/cairo"
+      android:textColor="@color/colorPrimary"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="@+id/composite"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/guideline10"
+      app:layout_constraintTop_toTopOf="@+id/composite" />
+
+  <View
+      android:id="@+id/view"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/colorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline30" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.66423357" />
+
+    <TextView
+        android:fontFamily="@font/cairo"
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rate student"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <RatingBar
+
+        android:id="@+id/ratingBar"
+        style="@style/foodRatingBarLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:rating="0"
+        android:stepSize="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.125" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline25"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.3" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline26"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.42" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline27"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.49" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline28"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.56" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline30"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.6458333" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

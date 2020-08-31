@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.About">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/include2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?attr/colorPrimary"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="@style/ToolbarThem2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:titleTextColor="@color/white" />
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/cairo"
+      android:text="About"
+      android:textColor="@color/white"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="@+id/include2"
+      app:layout_constraintEnd_toEndOf="@+id/include2"
+      app:layout_constraintStart_toStartOf="@+id/include2"
+      app:layout_constraintTop_toTopOf="@+id/include2" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/imageView2"
+      android:layout_width="0dp"
+      android:layout_height="200dp"
+      android:background="@color/colorPrimary"
+      android:src="@drawable/logofinish"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+  <ScrollView
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/text_about"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/cairo"
+          android:padding="10dp"
+          android:text="This application aims to provide a free service for people who suffer from toothache, to connect them to specialized places, store their data and their medical history, and obtain results with high efficiency. It also provides dentists with finding these patients and following up with them."
+          android:textColor="@color/colorPrimary"
+          android:textSize="24sp" />
+    </LinearLayout>
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

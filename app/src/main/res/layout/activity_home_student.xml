@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".HomeStudent">
+
+  <androidx.drawerlayout.widget.DrawerLayout
+      android:id="@+id/drawer_layout"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentBottom="true"
+      android:fitsSystemWindows="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/coll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="?attr/colorPrimary"
+          android:minHeight="?attr/actionBarSize"
+          android:theme="?attr/actionBarTheme"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:titleTextColor="@color/white" />
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipStudent"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginRight="4dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+    >
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerViewHomeStudent"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+       />
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+      <TextView
+          android:id="@+id/textNoitem"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="No Item...."
+          android:textColor="@color/colorPrimary"
+          android:textSize="30sp"
+          android:visibility="gone"
+          app:layout_constraintBottom_toBottomOf="@+id/swipStudent"
+          app:layout_constraintEnd_toEndOf="@+id/swipStudent"
+          app:layout_constraintStart_toStartOf="@+id/swipStudent"
+          app:layout_constraintTop_toTopOf="@+id/swipStudent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="@color/colorPrimary"
+        app:headerLayout="@layout/nav_header_student"
+        app:menu="@menu/drawer_home_junior" />
+
+  </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

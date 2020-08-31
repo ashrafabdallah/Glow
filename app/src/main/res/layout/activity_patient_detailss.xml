@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.PatientDetailss">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/conternimage"
+      app:layout_constraintTop_toBottomOf="@id/toolbar"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/drawerBackgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/nav_header_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photo" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:background="@drawable/green_cover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drawerUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/cairo"
+        android:gravity="center"
+        android:text="@string/nav_header_title"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProfile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="8dp"
+        android:src="@drawable/photo"
+        android:text="@string/nav_header_subtitle"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="1dp"
+        app:layout_constraintDimensionRatio="2.6:1.15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  <ImageView
+      android:id="@+id/imageView11"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_marginTop="20dp"
+      app:layout_constraintStart_toStartOf="@+id/guideline29"
+      app:layout_constraintTop_toBottomOf="@+id/conternimage"
+      app:srcCompat="@drawable/phone" />
+
+  <TextView
+      android:id="@+id/textView32"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginLeft="10dp"
+      android:fontFamily="@font/cairo"
+      android:text="Phone number :"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+      app:layout_constraintStart_toEndOf="@+id/imageView11"
+      app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+  <TextView
+      android:id="@+id/textPhone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/cairo"
+      android:text="12222222321312"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="@+id/textView32"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.163"
+      app:layout_constraintStart_toStartOf="@+id/guideline7"
+      app:layout_constraintTop_toTopOf="@+id/textView32"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="24dp"
+      android:layout_marginRight="24dp"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toStartOf="@+id/Con"
+      app:layout_constraintGuide_begin="351dp"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/textView34"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="36dp"
+      android:fontFamily="@font/cairo"
+      android:text="- Prosthesis "
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintStart_toStartOf="@+id/guideline29"
+      app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+  <TextView
+      android:id="@+id/textView35"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/cairo"
+      android:text="- Operative(amalgam)"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintStart_toStartOf="@+id/guideline29"
+      app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+  <TextView
+      android:id="@+id/textView36"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/cairo"
+      android:text="- Fixed prosthodontics"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintStart_toStartOf="@+id/guideline29"
+      app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+  <TextView
+      android:id="@+id/textView37"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/cairo"
+      android:text="- Endodontics"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintStart_toStartOf="@+id/guideline29"
+      app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+  <TextView
+      android:id="@+id/textView38"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="24dp"
+      android:fontFamily="@font/cairo"
+      android:text="- Operative(composite)   "
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline29"
+      app:layout_constraintTop_toBottomOf="@+id/textView37"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="186dp" />
+
+  <CheckBox
+      android:id="@+id/prosthesis"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      app:layout_constraintBottom_toBottomOf="@+id/textView34"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.585"
+      app:layout_constraintStart_toStartOf="@+id/guideline7"
+      app:layout_constraintTop_toTopOf="@+id/textView34"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <CheckBox
+      android:id="@+id/operative"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      app:layout_constraintBottom_toBottomOf="@+id/textView35"
+      app:layout_constraintEnd_toEndOf="@+id/prosthesis"
+      app:layout_constraintStart_toStartOf="@+id/prosthesis"
+      app:layout_constraintTop_toTopOf="@+id/textView35"
+      app:layout_constraintVertical_bias="0.928" />
+
+  <CheckBox
+      android:id="@+id/fixedpro"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      app:layout_constraintBottom_toBottomOf="@+id/textView36"
+      app:layout_constraintEnd_toEndOf="@+id/operative"
+      app:layout_constraintStart_toStartOf="@+id/operative"
+      app:layout_constraintTop_toTopOf="@+id/textView36"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <CheckBox
+      android:id="@+id/endodonties"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      app:layout_constraintBottom_toBottomOf="@+id/textView37"
+      app:layout_constraintEnd_toEndOf="@+id/fixedpro"
+      app:layout_constraintStart_toStartOf="@+id/fixedpro"
+      app:layout_constraintTop_toTopOf="@+id/textView37"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <CheckBox
+      android:id="@+id/operativepostive"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="24dp"
+      android:enabled="false"
+      app:layout_constraintBottom_toBottomOf="@+id/textView38"
+      app:layout_constraintEnd_toEndOf="@+id/endodonties"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/textView38"
+      app:layout_constraintTop_toTopOf="@+id/textView38"
+      app:layout_constraintVertical_bias="0.184" />
+
+  <ImageView
+      android:id="@+id/imageView9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="18dp"
+      app:layout_constraintEnd_toEndOf="@+id/imageView11"
+      app:layout_constraintStart_toStartOf="@+id/imageView11"
+      app:layout_constraintTop_toBottomOf="@+id/imageView11"
+      app:srcCompat="@drawable/user" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="1dp"
+      android:fontFamily="@font/cairo"
+      android:text="Student name :"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+      app:layout_constraintStart_toEndOf="@+id/imageView9"
+      app:layout_constraintTop_toTopOf="@+id/imageView9"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/textstudentname"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/cairo"
+      android:text="Ashraf Abdallah Abdelfattah"
+      android:textColor="@color/colorPrimary"
+      android:textSize="12sp"
+      app:layout_constraintBottom_toBottomOf="@+id/textView4"
+      app:layout_constraintEnd_toEndOf="@+id/textPhone"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/textPhone"
+      app:layout_constraintTop_toTopOf="@+id/textView4"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <ImageView
+      android:id="@+id/imageView12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="18dp"
+      app:layout_constraintEnd_toEndOf="@+id/imageView9"
+      app:layout_constraintStart_toStartOf="@+id/imageView9"
+      app:layout_constraintTop_toBottomOf="@+id/imageView9"
+      app:srcCompat="@drawable/phone" />
+
+  <TextView
+      android:id="@+id/textView23"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="2dp"
+      android:fontFamily="@font/cairo"
+      android:text="Student phone :"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+      app:layout_constraintStart_toEndOf="@+id/imageView12"
+      app:layout_constraintTop_toTopOf="@+id/imageView12"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/textstudentphone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/cairo"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="@+id/textView23"
+      app:layout_constraintEnd_toEndOf="@+id/Con"
+      app:layout_constraintHorizontal_bias="0.171"
+      app:layout_constraintStart_toEndOf="@+id/textView23"
+      app:layout_constraintTop_toTopOf="@+id/textView23"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?attr/colorPrimary"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="@style/ToolbarThem2"
+
+      android:visibility="visible"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:title="Student Details"
+      app:titleTextColor="@color/white" />
+
+  <TextView
+      android:id="@+id/studentphone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/cairo"
+      android:text="12222222321312"
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="@+id/textView23"
+      app:layout_constraintEnd_toEndOf="@+id/textPhone"
+      app:layout_constraintHorizontal_bias="0.467"
+      app:layout_constraintStart_toStartOf="@+id/textPhone"
+      app:layout_constraintTop_toTopOf="@+id/textView23"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline29"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="19dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
